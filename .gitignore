@@ -1,0 +1,15 @@
+# OS/editor files
+.DS_Store
+**/.DS_Store
+.idea/
+.vscode/
+
+# Generated dependencies and build outputs
+**/node_modules/
+**/dist/
+**/target/
+
+# Local environment files
+.env
+.env.*
+!.env.example
