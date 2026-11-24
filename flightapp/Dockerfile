@@ -2,6 +2,7 @@ FROM maven:3.9-eclipse-temurin-17 AS build
 WORKDIR /app
 COPY pom.xml .
 COPY src ./src
+COPY settings.xml /root/.m2/settings.xml
 RUN mvn -B -DskipTests package
 
 FROM eclipse-temurin:17-jre
